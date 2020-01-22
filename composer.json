@@ -1,0 +1,26 @@
+{
+  "name": "lfischer/cli-helper",
+  "type": "library",
+  "description": "A small component to help you outputting stuff to the command line interface (CLI)",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonard Fischer",
+      "email": "leonard.fischer1987@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">7.1"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.2",
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "vimeo/psalm": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "lfischer\\cli\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
