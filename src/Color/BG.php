@@ -10,5 +10,4 @@ use lfischer\cli\BackgroundColor;
  */
 class BG extends BackgroundColor
 {
-
 }

@@ -10,5 +10,4 @@ use lfischer\cli\ForegroundColor;
  */
 class FG extends ForegroundColor
 {
-
 }
