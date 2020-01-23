@@ -11,6 +11,7 @@ use lfischer\cli\Exception\ColorException;
 class ForegroundColor
 {
     public const NONE = "\033[39m";
+    public const RESET = "\033[39m";
 
     public const BLACK = "\033[30m";
     public const RED = "\033[31m";
