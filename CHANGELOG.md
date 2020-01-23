@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - New convenience class to set foreground colors `lfischer\cli\Color\FG`
 - New convenience class to set background colors `lfischer\cli\Color\BG`
+- New class to style output (like **bold** or __underline__) `lfischer\cli\Style`
 - Foreground `RESET` constant (alias of `NONE`)
 - Background `RESET` constant (alias of `NONE`)
 
