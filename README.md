@@ -1,6 +1,7 @@
 # CLI helper
 
-A small component to help you output stuff on the command line interface (CLI).
+A small component to help you output stuff on the command line interface (CLI). I found a lot of information on [termsys.demon.co.uk/vtansi.htm](http://www.termsys.demon.co.uk/vtansi.htm).
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
  
 # Usage
 
