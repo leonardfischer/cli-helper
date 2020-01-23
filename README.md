@@ -12,9 +12,19 @@ use lfischer\cli\BackgroundColor;
 use lfischer\cli\ForegroundColor;
 use lfischer\cli\Cursor;
 
-echo BackgroundColor::BLUE . 'Blue background!' . BackgroundColor::NONE . Cursor::NEXT_LINE;
-echo ForegroundColor::BLUE . 'Blue foreground!' . ForegroundColor::NONE . Cursor::NEXT_LINE;
+echo BackgroundColor::BLUE . 'Blue background!' . BackgroundColor::RESET . Cursor::NEXT_LINE;
+echo ForegroundColor::BLUE . 'Blue foreground!' . ForegroundColor::RESET . Cursor::NEXT_LINE;
 echo Cursor::UP . Cursor::START . 'Overwriting the Previous line!';
+```
+
+Or, if you like shorter names: 
+
+```php
+use lfischer\cli\Color\BG;
+use lfischer\cli\Color\FG;
+
+echo BG::BLUE . 'Blue background!' . BG::NONE . PHP_EOL;
+echo FG::BLUE . 'Blue foreground!' . FG::NONE . PHP_EOL;
 ```
 
 But of course there is more, for example some classes offer static methods, like for coloring your output in full RGB:
