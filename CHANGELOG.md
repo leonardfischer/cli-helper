@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Foreground `RESET` constant (alias of `NONE`)
 - Background `RESET` constant (alias of `NONE`)
 
+### Changed
+- Changed PHP requirement to `>=7.1`
+
 ## [1.0.0] - 2020-01-22
 ### Added
 - New class to set foreground colors `lfischer\cli\ForegroundColor`
