@@ -10,12 +10,12 @@
     }
   ],
   "require": {
-    "php": ">=7.1"
+    "php": ">=7.1",
+    "psalm/phar": "^3.11"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.2",
-    "friendsofphp/php-cs-fixer": "^2.16",
-    "vimeo/psalm": "^3.8"
+    "friendsofphp/php-cs-fixer": "^2.16"
   },
   "autoload": {
     "psr-4": {
