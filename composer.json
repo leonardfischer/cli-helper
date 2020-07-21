@@ -10,12 +10,14 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
-    "psalm/phar": "^3.11"
+    "php": ">=7.1"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.2",
-    "friendsofphp/php-cs-fixer": "^2.16"
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "psalm/phar": "^3.12"
+  },
+  "config": {
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
