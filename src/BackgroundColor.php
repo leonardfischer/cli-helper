@@ -8,6 +8,7 @@ use lfischer\cli\Exception\ColorException;
  * Class BackgroundColor
  *
  * @package lfischer\cli
+ *
  * @method static string none(string $message)
  * @method static string reset(string $message)
  * @method static string black(string $message)

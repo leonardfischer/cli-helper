@@ -6,6 +6,7 @@ use Exception;
 
 /**
  * Class CursorException
+ *
  * @package lfischer\cli\Exception
  */
 class CursorException extends Exception

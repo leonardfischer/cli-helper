@@ -6,6 +6,7 @@ use lfischer\cli\Exception\CursorException;
 
 /**
  * Class Cursor
+ *
  * @package lfischer\cli
  */
 class Cursor

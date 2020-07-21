@@ -4,6 +4,7 @@ namespace lfischer\cli;
 
 /**
  * Class Erase
+ *
  * @package lfischer\cli
  */
 class Erase
