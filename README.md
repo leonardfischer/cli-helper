@@ -27,6 +27,16 @@ echo BG::BLUE . 'Blue background!' . BG::NONE . PHP_EOL;
 echo FG::BLUE . 'Blue foreground!' . FG::NONE . PHP_EOL;
 ```
 
+Also, since version 1.2.0, there are some convenience methods to simplify the usage even more:
+
+```php
+use lfischer\cli\Color\BG;
+use lfischer\cli\Color\FG;
+
+echo BG::blue('Blue background!') . PHP_EOL;
+echo FG::blue('Blue foreground!') . PHP_EOL;
+```
+
 But of course there is more, for example some classes offer static methods, like for coloring your output in full RGB:
 
 ```php
