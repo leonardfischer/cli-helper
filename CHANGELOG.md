@@ -5,11 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.2.0] - 2020-07-21 
 ### Added
-- Style `RESET` constant (alias of `NONE`)
+- New convenience method type-hints to set foreground colors, according to existing constants `FG::red('red text')` (via `__callStatic`)
+- New convenience method type-hints to set background colors, according to existing constants `BG::red('red background')` (via `__callStatic`)
+- New convenience method type-hints to set styles, according to existing constants `Style::udnerline('underlined text')` (via `__callStatic`)
 
 ### Fixed
-- PSR2 code style
+- Updating line endings from `CRLF` to `LF`
 
 ## [1.1.0] - 2020-01-23 
 ### Added
