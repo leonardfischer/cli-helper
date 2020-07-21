@@ -32,12 +32,17 @@ Also, since version 1.2.0, there are some convenience methods to simplify the us
 ```php
 use lfischer\cli\Color\BG;
 use lfischer\cli\Color\FG;
+use lfischer\cli\Style;
 
 echo BG::blue('Blue background!') . PHP_EOL;
 echo FG::blue('Blue foreground!') . PHP_EOL;
+echo Style::bold('Bold text!') . PHP_EOL;
+
+// Combine them!
+echo Style::underline(FG::red('Underlined red text!')) . PHP_EOL;
 ```
 
-But of course there is more, for example some classes offer static methods, like for coloring your output in full RGB:
+But wait, there is more! For example more static methods for coloring your output in full RGB:
 
 ```php
 use lfischer\cli\BackgroundColor;
