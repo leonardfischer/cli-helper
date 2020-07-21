@@ -6,7 +6,26 @@ use lfischer\cli\Exception\ColorException;
 
 /**
  * Class BackgroundColor
+ *
  * @package lfischer\cli
+ * @method static string none(string $message)
+ * @method static string reset(string $message)
+ * @method static string black(string $message)
+ * @method static string red(string $message)
+ * @method static string green(string $message)
+ * @method static string yellow(string $message)
+ * @method static string blue(string $message)
+ * @method static string magenta(string $message)
+ * @method static string cyan(string $message)
+ * @method static string white(string $message)
+ * @method static string bright_black(string $message)
+ * @method static string bright_red(string $message)
+ * @method static string bright_green(string $message)
+ * @method static string bright_yellow(string $message)
+ * @method static string bright_blue(string $message)
+ * @method static string bright_magenta(string $message)
+ * @method static string bright_cyan(string $message)
+ * @method static string bright_white(string $message)
  */
 class BackgroundColor
 {
@@ -32,6 +51,20 @@ class BackgroundColor
     public const BRIGHT_WHITE = "\033[107m";
 
     private const RGB_TEMPLATE = "\033[48;2;<r>;<g>;<b>m";
+
+    /**
+     * @param string $name
+     * @param array $arguments
+     * @return string
+     */
+    public static function __callStatic(string $name, array $arguments): string
+    {
+        if (defined('self::' . strtoupper($name))) {
+            return constant('self::' . strtoupper($name)) . $arguments[0] . self::RESET;
+        }
+
+        return $arguments[0];
+    }
 
     /**
      * @param int $red
