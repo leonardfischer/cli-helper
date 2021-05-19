@@ -1,6 +1,7 @@
 {
   "name": "lfischer/cli-helper",
   "type": "library",
+  "version": "1.3",
   "description": "A small component to help you outputting stuff to the command line interface (CLI)",
   "license": "MIT",
   "authors": [
